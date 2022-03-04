@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "ProximaSoft";
+    src: url("polices/ProximaSoft-Regular/ProximaSoft-Regular.woff2"), url("polices/ProximaSoft-Regular/ProximaSoft-Regular.woff");
+}
+
+@font-face {
+    font-family: "ProximaSoft";
+    src: url("polices/ProximaSoft-Bold/ProximaSoft-Bold.woff2"), url("polices/ProximaSoft-Bold/ProximaSoft-Bold.woff");
+    font-weight: bold;
+}
+
+.container {
+    background: linear-gradient(90deg, green 50%, red 50%);
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    position: relative;
+    box-shadow: 2px 1px 3px#333;
+    margin: 10rem auto;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: "ProximaSoft";
+    color: yellow;
+    font-size: 3.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100px);
+    text-transform: uppercase;
+    width: 500px;
+    mix-blend-mode: difference;
+    animation: move linear infinite 10s;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-400px, -90px);
+    }
+    25% {
+        transform: translate(-220px, 0px);
+    }
+    75% {
+        transform: translate(-200px, -100px);
+    }
+    100% {
+        transform: translate(-400px, -90px);
+    }
+}
